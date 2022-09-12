@@ -1,0 +1,25 @@
+find(A:list , x: num ): num
+{
+local i: num;
+local n: num;
+i=0;
+for ( n in A)
+{
+if ( n== x)
+return i;
+i = A+1;
+}
+return -1;
+}
+main() : num
+{
+local A: list;
+local a: num;
+A= vec(3);
+A=5;
+A[2]=A;
+A[1]=8;
+A=find(A,5);
+numprint(find(a,5));
+return 0;
+}
